@@ -32,7 +32,7 @@
         <nav class="header-nav">
           <ul class="header-list list">
             <li class="header-item">
-              <a href="" class="header-link link">Студия</a>
+              <a href="" class="header-link link emphasis">Студия</a>
             </li>
             <li class="header-item">
               <a href="./portfolio.html " class="header-link link">Портфолио</a>
@@ -137,28 +137,37 @@
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="work-list list">
             <li class="work-item">
-              <img
-                src="./img/Works-img-1.jpg"
-                alt="виды-работ"
-                width="370"
-                height="294"
-              />
+              <div class="work-top-wrap">
+                <img
+                  src="./img/Works-img-1.jpg"
+                  alt="виды-работ"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-top-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="work-item">
-              <img
-                src="./img/Works-img-2.jpg"
-                alt="виды-работ"
-                width="370"
-                height="294"
-              />
+              <div class="work-top-wrap">
+                <img
+                  src="./img/Works-img-2.jpg"
+                  alt="виды-работ"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-top-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="work-item">
-              <img
-                src="./img/Works-img-3.jpg"
-                alt="виды-работ"
-                width="370"
-                height="294"
-              />
+              <div class="work-top-wrap">
+                <img
+                  src="./img/Works-img-3.jpg"
+                  alt="виды-работ"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-top-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -465,7 +474,11 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>X</button>
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-icon" width="15" height="15">
+            <use href="./img/icons.svg#icon-krestic"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>

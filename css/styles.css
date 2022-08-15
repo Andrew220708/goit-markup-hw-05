@@ -90,10 +90,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
-  transition-property: color, background-color, box-shadow;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
    position: relative;
 }
 .header-item:not(:last-child) {
@@ -107,7 +107,7 @@ body {
   background-color: #2196f3;
   display: block;
   position: absolute;
-  top: 45px;
+  top: 76px;
 } 
 .emphas::after {
 content:'';
@@ -116,7 +116,7 @@ content:'';
   background-color: #2196f3;
   display: block;
   position: absolute;
-  top: 45px;
+  top: 76px;
 
 }
 
@@ -394,7 +394,7 @@ justify-content: center;
   align-items: center;
   display: flex;
   fill: #afb1b8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:last-child {
   margin-right: 0;
@@ -499,7 +499,7 @@ justify-content: center;
   width: 100%;
   height: 100%;
   background-color: rgba(48, 48, 48, 0.467);
-  transition: opacity 250ms linear, visibility 250ms;
+  transition: opacity 250ms linear, visibility 250ms linear;
 }
 .modal {
   position: absolute;
@@ -616,11 +616,9 @@ transition: transform 250ms linear;
   padding-left: 24px;
   border: 1px solid #eeeeee;
   border-top: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
- 
 }
 
-#EEEEEE .portfolio-after-title {
+.portfolio-after-title {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -634,7 +632,7 @@ transition: transform 250ms linear;
 }
 .portfolio-top-link {
   display: block;
-   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+   text-decoration: none;
    background-color: transparent;
 transition-property:  box-shadow;
 transition-duration: 250ms;
